@@ -21,7 +21,7 @@ env:
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 */8 * * *
+    - cron: 00 16 * * *
 
 jobs:
   check:
@@ -59,7 +59,7 @@ jobs:
       with:
         retain_days: 1
         keep_minimum_runs: 1
-        
+ 
  ssrplus:
     runs-on: ubuntu-latest
 
